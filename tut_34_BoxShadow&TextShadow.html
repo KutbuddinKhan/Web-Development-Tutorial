@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            padding: 23px 12px;
+            margin: 23px 12px;
+            /* background: khaki; */
+            /* border: 2px solid rgb(230, 131, 131); */
+            color: green;
+            
+            /* box-shadow: offset-x offset-y color; */
+            /* box-shadow: offset-x offset-y blur-radius color; */
+            /* box-shadow: offset-x offset-y blur-radius spread=radius color ; */
+            
+            /* box-shadow: 2px 4px green; */
+            /* box-shadow: -2px -4px green; */
+            /* box-shadow: 2px 4px 10px green; */
+            /* box-shadow: -2px -4px 10px green; */
+            /* box-shadow: 2px 4px 10px 20px green; */
+          
+            /* box-shadow: 2px 4px 10px 20px rgba(17, 252, 252, 0.4); */
+
+            box-shadow: inset 3px 5px green;
+            box-shadow: inset 3px 5px green, 4px 6px red;
+        }
+        .card h2{
+            /* text-shadow: 1px 1px red; */
+            /* text-shadow: 3px 2px 2px red; */
+            text-shadow: -3px -2 px 2px red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="caed-1">
+            <h2>This is c++ Course</h2>
+            <p>I hava started c++ course which does not mean that we will stop this course. we will contain this course to compilation. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur doloribus ea reiciendis labore quasi amet debitis suscipit excepturi? Deserunt accusantium sit, tenetur omnis repellendus, autem ab delectus quis qui minima earum assumenda nisi in.</p>
+        </div>
+        <div class="card" id="caed-2">
+            <h2>This is HTML Course</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex alias consectetur sequi totam mollitia aliquid corporis blanditiis magnam eos, eius voluptatum in commodi natus perspiciatis maiores impedit! Alias, quisquam non.</p>
+        </div>
+        <div class="card" id="caed-3">
+            <h2>Card3</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla ab voluptas, iusto, porro iure sapiente cum atque quos consequatur commodi facere eius recusandae ea ducimus ipsum ratione, eos mollitia voluptatem!</p>
+        </div>
+    </div>
+</body>
+</html>

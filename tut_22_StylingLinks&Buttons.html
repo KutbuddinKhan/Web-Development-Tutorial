@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Links & Buttons</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            background-color: rgb(223, 245, 201);
+            padding: 34px;
+            margin: 34px auto;
+            width: 666px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            color: rgb(68, 3, 3);
+            background-color: rgb(70, 12, 12);
+        }
+        a:visited{
+            background-color: yellow;
+        }
+        a:active{
+            background-color: darkgreen;
+        }
+        .btn{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            background-color: crimson;
+            padding: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            border-radius: 4px;
+        }
+        .btn:hover{
+            color: darkgoldenrod;
+            background-color: rgb(223, 245, 201);
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+    <h3>This is Heading</h3>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere tempora beatae repudiandae sunt perferendis ut, dolorum odit itaque aliquid quam soluta reiciendis consequatur molestias. Dolor facere quia illo vero eum, quidem autem tempora tempore.</p>
+    <a href="https://Yahoo.com" class="btn">Read more</a>
+    <button class="btn">Contact us</button>
+    </div>
+</body>
+</html>

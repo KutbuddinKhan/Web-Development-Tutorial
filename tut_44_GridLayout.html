@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Creating Layouts using Grid template area</title>
+
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer';
+        }
+
+        .item {
+            background-color: yellow;
+            border: 3px solid black;
+            padding: 12px 23px;
+        }
+
+        #navbar {
+            grid-area: navbar;
+        }
+
+        #section {
+            grid-area: section;
+        }
+
+        #aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div id="navbar" class="item">
+            Home About Contact Us
+        </div>
+        <div id="section" class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis aspernatur minus
+            optio voluptatum quia iste nisi, nemo obcaecati dignissimos laudantium hic ea alias porro beatae fugit
+            molestiae? Suscipit, quos perferendis quisquam beatae tempore quod?Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. Aperiam rerum maiores eos dolorum magni beatae! Similique velit unde dolorum sint
+            architecto, culpa amet voluptatem obcaecati maxime perspiciatis dignissimos excepturi error reiciendis quod
+            ratione nobis autem repellat veritatis necessitatibus quidem itaque, ab, sequi alias. Earum quam nam aliquam
+            blanditiis. Deleniti illo aliquam sapiente numquam ratione enim vitae aspernatur eligendi, doloribus,
+            cupiditate tempora! Temporibus nesciunt ipsum voluptate incidunt culpa reiciendis soluta facilis
+            consequuntur maiores alias, natus voluptas magni ipsa architecto fugit accusantium aliquam suscipit
+            provident porro amet laboriosam veniam! Deleniti natus autem quod enim, cum illum similique ullam atque
+            eligendi doloribus excepturi dignissimos suscipit aliquid mollitia repudiandae, dicta quam rerum nisi
+            aspernatur obcaecati harum aut animi nihil. Nam excepturi voluptatum rem mollitia omnis iusto culpa maiores.
+            Atque inventore unde molestiae nobis culpa. Doloremque omnis temporibus sed, earum dicta voluptatum quis
+            impedit commodi necessitatibus aspernatur dolores porro neque exercitationem magni reiciendis voluptatem
+            cupiditate atque consectetur ipsum pariatur, repellat nam ut accusamus doloribus! Vel, est qui repellendus
+            deleniti odit tenetur fugiat doloribus atque ut laudantium. Pariatur quo quis architecto numquam voluptas
+            nesciunt. </div>
+        <div id="aside" class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto dolore consequuntur,
+            ea soluta accusantium libero repellat cumque quam hic labore non. Eaque, nemo. Magni amet asperiores ipsam
+            sed eius eos. Veniam voluptas culpa earum?</div>
+        <!-- <div class="item">Item-1</div>
+        <div class="item">Item-2</div>
+        <div class="item">Item-3</div>
+        <div class="item">Item-4</div>
+        <div class="item">Item-5</div>
+        <div class="item">Item-6</div>
+        <div class="item">Item-7</div>
+        <div class="item">Item-8</div>
+        <div class="item">Item-9</div>
+        <div class="item">Item-10</div>
+        <div class="item">Item-11</div>
+        <div class="item">Item-12</div>
+        <div class="item">Item-13</div>
+        <div class="item">Item-14</div> -->
+    </div>
+
+    <footer class="item">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore delectus repellendus earum sint recusandae ad
+        quibusdam aspernatur vitae ut veritatis quas hic consequatur laudantium, animi culpa ipsam ipsum saepe. Eligendi
+        esse voluptates totam et?
+    </footer>
+</body>
+
+</html>

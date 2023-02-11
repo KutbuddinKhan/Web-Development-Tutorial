@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <font size="6" color="bluw"> -->
+    <script>
+        // Write a program to calculate average marks of students and display it.
+        var rno, sname, web, daa, sys, total, avg;
+        rno = prompt("Enter roll no: ")
+        sname = prompt("Enter name: ")
+        web = parseInt(prompt("Enter marks of web: "))
+        daa = parseInt(prompt("Enter Datastructure: "))
+        sys = parseInt(prompt("Enter of ML: "))
+        total = web + daa + sys;
+        avg = total / 3;
+        document.write(" Roll No: " + rno)
+        document.write("<br> Name: " + sname)
+        document.write("<br> Total: " + total)
+        document.write("<br> Avg: " + avg)
+
+        if (web >= 40 && daa >= 40 && sys >= 40) {
+            if (avg >= 80)
+                document.write("<br>Grade: A")
+            else if (avg >= 60)
+                document.write("<br>Grade: B")
+            else if (avg >= 40)
+                document.write("<br>Grade: C")
+        }
+        else {
+            document.write("<br>Fail...")
+        }
+    </script>
+    <!-- </font> -->
+
+    <!-- Program to validate email with conditions -->
+
+    <form name="frm" method="post" action="#" onsubmit="return emailValaid();">
+        Email Address:
+        <input type="text" name="txtemail">
+        <input type="submit" value="register">
+    </form>
+
+    <script>
+        function emailValaid() {
+            var eid = document.frm.txtemail.value;
+            var atpos = eid.indexOf("@");
+            var dotpos = eid.lastIndexOf(".");
+
+            if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= eid.length) {
+                alert("Please enter a valid email address");
+                return false;
+            }
+        }
+
+        const email = document.getElementById("email");
+        email.addEventListener('blur', () => {
+            let regex = /^([_\-\.0-9a-zA-Z]+)@([_\-\.0-9a-zA-Z]+)\.([a=zA=Z]){2,7}$/;
+            let str = email.value;
+            if (regex.text(str)) {
+                email.classList.remove('is-invalid')
+                // validEmail = true;
+            }
+            else {
+                email.classList.add('is-invalid')
+            }
+        })
+
+
+    </script>
+
+
+    <!-- student information -->
+    <script>
+        document.write("Student infor<br>")
+        var rno = 29;
+        var sname = "khan kutbuddin"
+        document.write("Roll no : ", rno)
+        document.write("<br> Name: ", sname)
+
+    </script>
+
+</body>
+
+</html>
